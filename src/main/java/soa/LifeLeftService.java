@@ -1,7 +1,10 @@
 package soa;
 
-import java.time.Year;
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
 
+import java.time.Year;
+@WebService(serviceName = "LifeLeft")
 public class LifeLeftService {
     private static final Integer ESPARANCE_VIE_HOMMES = 79;
     private static final Integer ESPARANCE_VIE_FEMMES = 85;
@@ -10,7 +13,7 @@ public class LifeLeftService {
     String femme = "femme";
 
     Integer evDeReference = 0;
-
+    @WebMethod
     public String anneeRestanteAVivre (String prenom, String sexe, Integer anneeNaissance){
         if (sexe.equals(homme)) evDeReference = ESPARANCE_VIE_HOMMES;
         else evDeReference = ESPARANCE_VIE_FEMMES;
