@@ -11,7 +11,6 @@ public class LifeLeftService {
 
     String homme = "homme";
     String femme = "femme";
-
     Integer evDeReference = 0;
     @WebMethod
     public String anneeRestanteAVivre (String prenom, String sexe, Integer anneeNaissance){
