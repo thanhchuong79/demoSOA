@@ -36,6 +36,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-maven-plugin</artifactId>
+            <version>4.0.2</version>
+        </dependency>
     </dependencies>
 
     <build>
